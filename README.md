@@ -27,13 +27,13 @@
 - 直播源播放
 
 # 界面概览
-<img src="https://github.com/bytebyte6/Tv/blob/master/pic/tv%20(1).jpg" width="320" height="640">
-<img src="https://github.com/bytebyte6/Tv/blob/master/pic/tv%20(2).jpg" width="320" height="640">
-<img src="https://github.com/bytebyte6/Tv/blob/master/pic/tv%20(3).jpg" width="320" height="640">
-<img src="https://github.com/bytebyte6/Tv/blob/master/pic/tv%20(4).jpg" width="320" height="640">
-<img src="https://github.com/bytebyte6/Tv/blob/master/pic/tv%20(5).jpg" width="320" height="640">
-<img src="https://github.com/bytebyte6/Tv/blob/master/pic/tv%20(6).jpg" width="320" height="640">
-<img src="https://github.com/bytebyte6/Tv/blob/master/pic/tv%20(7).jpg" width="320" height="640">
-<img src="https://github.com/bytebyte6/Tv/blob/master/pic/tv%20(8).jpg" width="320" height="640">
-<img src="https://github.com/bytebyte6/Tv/blob/master/pic/tv%20(9).jpg" width="320" height="640">
-<img src="https://github.com/bytebyte6/Tv/blob/master/pic/tv%20(10).jpg" width="320" height="640">
+<img src="https://github.com/bytebyte6/Tv/blob/main/pic/tv%20(1).jpg" width="320" height="640">
+<img src="https://github.com/bytebyte6/Tv/blob/main/pic/tv%20(2).jpg" width="320" height="640">
+<img src="https://github.com/bytebyte6/Tv/blob/main/pic/tv%20(3).jpg" width="320" height="640">
+<img src="https://github.com/bytebyte6/Tv/blob/main/pic/tv%20(4).jpg" width="320" height="640">
+<img src="https://github.com/bytebyte6/Tv/blob/main/pic/tv%20(5).jpg" width="320" height="640">
+<img src="https://github.com/bytebyte6/Tv/blob/main/pic/tv%20(6).jpg" width="320" height="640">
+<img src="https://github.com/bytebyte6/Tv/blob/main/pic/tv%20(7).jpg" width="320" height="640">
+<img src="https://github.com/bytebyte6/Tv/blob/main/pic/tv%20(8).jpg" width="320" height="640">
+<img src="https://github.com/bytebyte6/Tv/blob/main/pic/tv%20(9).jpg" width="320" height="640">
+<img src="https://github.com/bytebyte6/Tv/blob/main/pic/tv%20(10).jpg" width="320" height="640">

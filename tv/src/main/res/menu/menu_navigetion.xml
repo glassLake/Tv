@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_home" />
+
+    <item
+        android:contentDescription="@string/nav_import"
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/nav_me"
+        android:icon="@drawable/ic_playlist_add"
+        android:title="@string/nav_import" />
+    <item
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/nav_fav"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/nav_fav" />
+
+    <item
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/nav_download"
+        android:icon="@drawable/ic_download"
+        android:title="@string/nav_download" />
+
+    <item
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/ic_setting"
+        android:title="@string/nav_setting" />
+
+    <item
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_info"
+        android:title="@string/about" />
+
+</menu>

@@ -1,8 +1,8 @@
 object Versions {
     const val versionName = "1.0"
     const val versionCode = 1
-    const val compile_sdk = 29
-    const val target_sdk = 29
+    const val compile_sdk = 32
+    const val target_sdk = 32
     const val min_sdk = 21
     const val buildToolsVersion = "30.0.2"
     const val android_gradle_plugin = "4.1.1"

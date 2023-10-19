@@ -1,4 +1,6 @@
 buildscript {
+    //apply from: 'https://raw.githubusercontent.com/hss01248/flipperUtil/dev/remote3.gradle'
+    apply(from = "https://raw.githubusercontent.com/hss01248/flipperUtil/dev/remote3.gradle")
     repositories {
         google()
         jcenter()

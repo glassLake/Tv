@@ -3,7 +3,7 @@ buildscript {
     apply(from = "https://raw.githubusercontent.com/hss01248/flipperUtil/dev/remote3.gradle")
     apply(from = "https://raw.githubusercontent.com/hss01248/flipperUtil/master/deps/depsLastestChecker.gradle")
     apply(from = "https://raw.githubusercontent.com/hss01248/flipperUtil/dev/z_config/git_branch_info.gradle")
-    apply(from = "https://raw.githubusercontent.com/skyNet2017/AppUpdate/master/uploadToPyger.gradle?a=1")
+    apply(from = "https://raw.githubusercontent.com/skyNet2017/AppUpdate/master/uploadToPyger.gradle?a=2")
     //    apply from: 'https://raw.githubusercontent.com/hss01248/flipperUtil/master/deps/depsLastestChecker.gradle'
     //    apply from: 'https://raw.githubusercontent.com/hss01248/flipperUtil/dev/z_config/git_branch_info.gradle'
     //apply from:'https://raw.githubusercontent.com/skyNet2017/AppUpdate/master/uploadToPyger.gradle?a=1'

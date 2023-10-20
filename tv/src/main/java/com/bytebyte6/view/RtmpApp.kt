@@ -4,6 +4,7 @@ import android.app.Application
 import android.os.StrictMode
 import androidx.work.Configuration
 import androidx.work.WorkManager
+import com.blankj.utilcode.util.LogUtils
 import com.bytebyte6.viewmodel.viewModule
 import com.bytebyte6.common.LogEx
 import com.bytebyte6.common.baseModule
@@ -13,6 +14,8 @@ import com.bytebyte6.data.roomModule
 import com.bytebyte6.usecase.exoPlayerModule
 import com.bytebyte6.usecase.work.AppDelegatingWorkerFactory
 import com.bytebyte6.usecase.useCaseModule
+import com.hss01248.appstartup.api.AppStartUpCallback
+import com.hss01248.appstartup.api.AppStartUpUtil
 import io.reactivex.rxjava3.plugins.RxJavaPlugins
 import org.koin.android.ext.android.inject
 import org.koin.android.ext.koin.androidContext
@@ -30,12 +33,14 @@ class RtmpApp : Application() {
             androidContext(this@RtmpApp)
             modules(baseModule, roomModule, dataModule, viewModule, useCaseModule, exoPlayerModule)
         }
-        WorkManager.initialize(this, Configuration.Builder().setWorkerFactory(factory).build())
+        //WorkManager.initialize(this, Configuration.Builder().setWorkerFactory(factory).build())
         RxJavaPlugins.setErrorHandler {
             logd("Rx Global Exception Handler: ${it.message}")
-            it.printStackTrace()
+            LogUtils.w(it)
         }
         LogEx.logger = true
+
+
     }
 
     private fun strictMode() {

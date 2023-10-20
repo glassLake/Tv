@@ -86,6 +86,9 @@ dependencies {
     implementation(Libs.EXOPLAYER_UI)
     implementation(Libs.EXOPLAYER_RTMP)
     implementation ("com.blankj:utilcodex:1.30.0")
+    implementation ("androidx.work:work-runtime-ktx:2.7.0")
+    //  //适配Android 12崩溃问题
+    //    implementation 'androidx.work:work-runtime-ktx:2.7.0'
     //implementation ("com.github.hss01248.utilcodeEnhance:iwidget:1.2.7")
     //implementation "com.github.hss01248.utilcodeEnhance:enhance:1.0.2"
 

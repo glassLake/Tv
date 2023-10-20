@@ -51,7 +51,7 @@ abstract class RxUseCase<I, O> {
             val o = run(param)
             result.postValue((Result.Success(o)))
             it.onSuccess(o)
-        } catch (e: Exception) {
+        } catch (e: Throwable) {
             result.postValue((Result.Error(e)))
             it.onError(e)
         }

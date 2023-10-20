@@ -1,0 +1,55 @@
+buildscript{
+
+     repositories {
+        mavenLocal()
+        maven {//google()
+             url  'https://dl.google.com/dl/android/maven2/'
+        }
+        maven {//mavenCentral()
+             url  'https://repo.maven.apache.org/maven2/'
+        }
+        maven {
+             url  'https://jitpack.io'
+        }
+        maven {
+             url  'https://maven.aliyun.com/repository/jcenter'
+        }
+        maven {//jcenter()
+             url  'https://jcenter.bintray.com/'
+        }
+}
+
+//list all plugin classPath:
+dependencies {
+     classpath "com.android.tools.build:gradle:4.1.1"
+     classpath "com.github.dcendents:android-maven-gradle-plugin:2.1"
+     classpath "com.google.firebase:firebase-crashlytics-gradle:2.5.0"
+     classpath "com.google.gms:google-services:4.3.5"
+     classpath "com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.10"
+     classpath "io.github.didi.dokit:dokitx-plugin:3.5.0.1"
+     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10"
+  }
+}
+
+
+//当前工程应用的插件信息:
+// [class:class org.gradle.api.plugins.HelpTasksPlugin]
+// [class:class org.gradle.buildinit.plugins.BuildInitPlugin]
+// [class:class org.gradle.buildinit.plugins.WrapperPlugin]
+// [class:class com.android.build.gradle.internal.plugins.VersionCheckPlugin]
+// [class:class com.android.build.gradle.api.AndroidBasePlugin]
+// [class:class org.gradle.language.base.plugins.LifecycleBasePlugin]
+// [class:class org.gradle.api.plugins.BasePlugin]
+// [class:class org.gradle.api.plugins.ReportingBasePlugin]
+// [class:class org.gradle.api.plugins.JavaBasePlugin]
+// [extension:extension 'android', projectType:0, moduleLoader:com.android.build.gradle.internal.plugins.LintModuleLoader@48351461, class:class com.android.build.gradle.internal.plugins.AppPlugin, packagePublished:false, analyticsPluginType:APPLICATION, extensionClass:class com.android.build.gradle.internal.dsl.BaseAppModuleExtension, variantInputModel:com.android.build.gradle.internal.variant.LegacyVariantInputManager@6a5490b4, variantManager:com.android.build.gradle.internal.VariantManager@3dfd67a8]
+// [extension:extension 'android', class:class com.android.build.gradle.AppPlugin]
+// [fileResolver:org.gradle.api.internal.file.BaseDirFileResolver@63e8a96f, class:class org.jetbrains.kotlin.gradle.plugin.KotlinAndroidPluginWrapper, kotlinPluginVersion:1.4.10, registry:org.gradle.tooling.provider.model.internal.DefaultToolingModelBuilderRegistry@3d5ac0a0, projectExtensionClass:class org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension]
+// [nativeCompilerPluginArtifact:null, pluginArtifact:org.jetbrains.kotlin.gradle.plugin.JetBrainsSubpluginArtifact@296ba817, class:class org.jetbrains.kotlin.gradle.internal.AndroidSubplugin, compilerPluginId:org.jetbrains.kotlin.android, pluginArtifactForNative:null]
+// [class:class org.jetbrains.kotlin.gradle.internal.AndroidExtensionsSubpluginIndicator]
+// [pluginArtifact:org.jetbrains.kotlin.gradle.plugin.JetBrainsSubpluginArtifact@14ca7024, class:class org.jetbrains.kotlin.gradle.internal.Kapt3GradleSubplugin, compilerPluginId:org.jetbrains.kotlin.kapt3, pluginArtifactForNative:null]
+// [CRASHLYTICS_TASK_GROUP:Firebase Crashlytics, pluginProperties:extension 'firebaseCrashlytics', externalPluginsState:com.google.firebase.crashlytics.buildtools.gradle.ExternalPluginsState@2ac553c7, class:class com.google.firebase.crashlytics.buildtools.gradle.CrashlyticsPlugin, deferredDependencyConfiguration:[], project:project ':tv']
+// [class:class com.google.gms.googleservices.GoogleServicesPlugin]
+// [class:class org.gradle.kotlin.dsl.provider.plugins.KotlinScriptBasePlugin]
+// [class:class com.hujiang.gradle.plugin.android.aspectjx.AJXPlugin]
+// [class:class com.dorongold.gradle.tasktree.TaskTreePlugin]

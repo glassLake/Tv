@@ -2,6 +2,7 @@ package com.bytebyte6.view.adapter
 
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.OnLongClickListener
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
@@ -15,6 +16,7 @@ import com.bytebyte6.view.R
 import com.bytebyte6.view.databinding.ItemImageBinding
 import com.bytebyte6.view.load
 import com.google.android.material.checkbox.MaterialCheckBox
+
 
 interface ButtonClickListener {
     fun onClick(position: Int, tv: Tv)
@@ -65,6 +67,17 @@ class TvAdapter(
         }
 
         button.isChecked = item.favorite
+        holder.itemView.setOnLongClickListener(object :OnLongClickListener{
+            override fun onLongClick(v: View?): Boolean {
+                onLongClicked(holder.itemView,currentList[position])
+                return  true
+            }
+
+        })
+    }
+
+    private fun onLongClicked(tv1: View, tv: Tv?) {
+        //ISingleChooseItem.showAsMenu2(tv1,)
     }
 }
 

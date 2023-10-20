@@ -2,6 +2,7 @@ package com.bytebyte6.view.videolist
 
 import android.os.Bundle
 import android.view.View
+import android.widget.AdapterView.OnItemLongClickListener
 import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
@@ -72,6 +73,9 @@ class VideoListFragment : ListFragment() {
             recyclerView.addItemDecoration(GridSpaceDecoration())
             recyclerView.setHasFixedSize(true)
             recyclerView.itemAnimator = null
+            /*recyclerView.setOnLongClickListener(object : OnItemLongClickListener{
+
+            })*/
         }
 
         viewModel.count(title).observe(viewLifecycleOwner, Observer {

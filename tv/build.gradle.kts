@@ -85,7 +85,9 @@ dependencies {
     implementation(Libs.EXOPLAYER_DASH)
     implementation(Libs.EXOPLAYER_UI)
     implementation(Libs.EXOPLAYER_RTMP)
-    api ("com.blankj:utilcodex:1.30.0")
+    implementation ("com.blankj:utilcodex:1.30.0")
+    //implementation ("com.github.hss01248.utilcodeEnhance:iwidget:1.2.7")
+    //implementation "com.github.hss01248.utilcodeEnhance:enhance:1.0.2"
 
     implementation(Libs.FIREBASE_ANALYTICS)
     implementation(Libs.FIREBASE_CRASH)

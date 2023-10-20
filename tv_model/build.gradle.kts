@@ -60,6 +60,7 @@ android {
 dependencies {
     implementation(project(":lib_dependency"))
     implementation(project(":lib_common"))
+    implementation("com.squareup.okio:okio:2.6.0")
 
     kapt(Kapt.ROOM)
 

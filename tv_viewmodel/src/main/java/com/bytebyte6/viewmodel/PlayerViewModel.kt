@@ -54,7 +54,7 @@ class PlayerViewModel(
     private var player: Player? = null
 
     var url: String = ""
-
+    var retryCount = 0;
     var downloadRequest: DownloadRequest? = null
 
     private var onlyWifiPlay: Boolean = true
@@ -71,6 +71,7 @@ class PlayerViewModel(
             _showProgressBar.postValue(!isPlaying && !playbackStateReady)
         }
 
+
         override fun onPlayerError(error: ExoPlaybackException) {
             if (isBehindLiveWindow(error)) {
                 player?.seekToDefaultPosition()
@@ -82,8 +83,12 @@ class PlayerViewModel(
 //                return
 //            }
             if (error.cause is HttpDataSource.InvalidResponseCodeException) {
-                retry()
-                return
+                /*if(retryCount <3){
+                    retryCount++
+                    retry()
+                    return
+                }*/
+
             }
             _showProgressBar.postValue(false)
             _onPlayerError.postValue(Event(error))
@@ -154,6 +159,7 @@ class PlayerViewModel(
     }
 
     private fun initPlayer() {
+
         player = if (localPlay()) {
             getCachePlayer()
         } else {

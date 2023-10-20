@@ -1,9 +1,14 @@
 buildscript {
     //apply from: 'https://raw.githubusercontent.com/hss01248/flipperUtil/dev/remote3.gradle'
     apply(from = "https://raw.githubusercontent.com/hss01248/flipperUtil/dev/remote3.gradle")
+    apply(from = "https://raw.githubusercontent.com/hss01248/flipperUtil/master/deps/depsLastestChecker.gradle")
+    apply(from = "https://raw.githubusercontent.com/hss01248/flipperUtil/dev/z_config/git_branch_info.gradle")
+    //    apply from: 'https://raw.githubusercontent.com/hss01248/flipperUtil/master/deps/depsLastestChecker.gradle'
+    //    apply from: 'https://raw.githubusercontent.com/hss01248/flipperUtil/dev/z_config/git_branch_info.gradle'
     repositories {
         google()
         jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath(ClassPath.FIREBASE_CRASH)
@@ -18,6 +23,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
         maven { url = uri(Uri.JITPACK_IO) }
         maven { url = uri(Uri.ALIYUN_MAVEN) }
     }

@@ -43,6 +43,7 @@ object M3u {
      * 对得到的字符串做处理
      */
     private fun getM3uString(byteArray: ByteArray): String {
+        //java.lang.NoSuchMethodError: No static method commonToUtf8String$default(
         return byteArray.commonToUtf8String()
             .removePrefix("#EXTM3U")
             .replace("\r\n", "\n")

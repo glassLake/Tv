@@ -55,6 +55,7 @@ dependencies {
     implementation(project(":lib_common"))
     implementation(Libs.GETIMAGE)
     implementation(Libs.EXOPLAYER_CORE)
+    implementation ("androidx.work:work-runtime-ktx:2.7.0")
 
     testImplementation(Test.JUNIT)
     testImplementation(project(":tv_test"))

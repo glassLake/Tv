@@ -9,15 +9,14 @@ import androidx.work.*
 class FindImageWork(
     context: Context,
     workerParams: WorkerParameters,
-    private val searchCountryImage: SearchCountryImage,
-    private val searchTvLogo: SearchTvLogo
 ) : Worker(context, workerParams) {
-
+     var searchCountryImage: SearchCountryImage? = null;
+     var searchTvLogo: SearchTvLogo? = null
     override fun doWork(): Result {
         try {
-            searchCountryImage.searchCountryImage()
-            searchTvLogo.searchLogo()
-        } catch (e: Exception) {
+            searchCountryImage?.searchCountryImage()
+            searchTvLogo?.searchLogo()
+        } catch (e: Throwable) {
             return Result.failure()
         }
         return Result.success()
@@ -42,11 +41,12 @@ class GetCountryFactory(
         workerClassName: String,
         workerParameters: WorkerParameters
     ): ListenableWorker {
-        return FindImageWork(
-            searchCountryImage = searchCountryImage,
-            searchTvLogo = searchTvLogo,
+        var work =  FindImageWork(
             context = appContext,
             workerParams = workerParameters
         )
+        work.searchCountryImage = searchCountryImage
+        work.searchTvLogo = searchTvLogo
+        return work
     }
 }

@@ -38,6 +38,10 @@ android {
     }
 
     buildTypes {
+        getByName("debug") {
+            applicationIdSuffix = ".dev"
+            signingConfig = signingConfigs.getByName("tv_release")
+        }
         getByName("release") {
             isMinifyEnabled = false
             proguardFiles(

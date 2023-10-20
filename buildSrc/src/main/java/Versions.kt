@@ -1,6 +1,6 @@
 object Versions {
-    const val versionName = "1.0.01"
-    const val versionCode = 1000
+    const val versionName = "1.0.02"
+    const val versionCode = 1002
     const val compile_sdk = 32
     const val target_sdk = 32
     const val min_sdk = 21
@@ -26,6 +26,6 @@ object Versions {
     const val activity_version = "1.2.0-alpha07"
     const val lifecycle_version = "2.3.0"
     const val arch_version = "2.1.0"
-    const val work_version = "2.5.0"
+    const val work_version = "2.7.0"
     const val paging_version = "3.0.0-beta01"
 }
